@@ -1,12 +1,9 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-
-export const Home = () => {
+function Home() {
   return (
-    <div>
-      <div>
-        <Navbar />
-      </div>
-    </div>
+    <section className="min-h-screen flex items-center justify-center">
+      <h1 className="text-5xl font-bold">Home Page</h1>
+    </section>
   );
-};
+}
+
+export default Home;
