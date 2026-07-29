@@ -10,7 +10,7 @@ function NavLinks() {
             className={({ isActive }) =>
               isActive
                 ? "text-white font-semibold"
-                : "text-gray-700 hover:text-white-600"
+                : "text-black hover:text-blue-600"
             }
           >
             Home
