@@ -36,7 +36,10 @@ export default function ProjectCard({ project }) {
       {/* ================= STACK ================= */}
 
       <div className="border-b border-gray-100 p-5">
-        <h4 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500">
+        <h4
+          className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500"
+          style={{ color: "var(--text)" }}
+        >
           Tech Stack
         </h4>
 
@@ -55,12 +58,18 @@ export default function ProjectCard({ project }) {
       {/* ================= FEATURES ================= */}
 
       <div className="flex-1 overflow-y-auto border-b border-gray-100 p-5">
-        <h4 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500">
+        <h4
+          className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500"
+          style={{ color: "var(--text)" }}
+        >
           Key Features
         </h4>
 
         {project.features?.length ? (
-          <ul className="space-y-3 text-sm text-gray-700">
+          <ul
+            className="space-y-3 text-sm text-gray-700"
+            style={{ color: "var(--text)" }}
+          >
             {project.features.map((feature) => (
               <li key={feature} className="flex items-start gap-2">
                 <span className="mt-1 text-green-500">✔</span>

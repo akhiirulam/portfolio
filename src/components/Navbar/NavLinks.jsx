@@ -1,54 +1,39 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ThemeToggle from "../Theme/ThemeToggle";
 
-function NavLinks() {
+const links = [
+  { name: "Home", to: "#home" },
+  { name: "Experience", to: "#experience" },
+  { name: "Education", to: "#education" },
+  { name: "Projects", to: "#projects" },
+  { name: "Contact", to: "#contact" },
+];
+
+function NavLinks({ mobile = false, setOpen }) {
   return (
-    <div className="flex justify-center items-center border border-gray-300 rounded-lg p-4 bg-gray-400 shadow-md">
-      <ul className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive
-                ? "text-white font-semibold"
-                : "text-black hover:text-blue-600"
-            }
+    <ul
+      className={
+        mobile
+          ? "flex flex-col items-center gap-6 py-6"
+          : "flex items-center gap-8"
+      }
+    >
+      {links.map((link) => (
+        <li key={link.name}>
+          <a
+            href={link.to}
+            onClick={() => mobile && setOpen(false)}
+            className="font-medium transition hover:text-blue-600"
+            style={{ color: "var(--text)" }}
           >
-            Home
-          </NavLink>
+            {link.name}
+          </a>
         </li>
-
-        <li>
-          <NavLink
-            to="/about"
-            className="transition-colors duration-300 hover:text-blue-600"
-          >
-            About
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
-            to="/projects"
-            className="transition-colors duration-300 hover:text-blue-600"
-          >
-            Projects
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
-            to="/contact"
-            className="transition-colors duration-300 hover:text-blue-600"
-          >
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <ThemeToggle />
-        </li>
-      </ul>
-    </div>
+      ))}
+      <li>
+        <ThemeToggle />
+      </li>
+    </ul>
   );
 }
 

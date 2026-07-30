@@ -1,4 +1,3 @@
-import BorderGlow from "./BorderGlow";
 import { HiOutlineMapPin, HiOutlineBriefcase } from "react-icons/hi2";
 import {
   SiReact,
@@ -7,6 +6,7 @@ import {
   SiExpress,
   SiJira,
 } from "react-icons/si";
+import BorderGlow from "./BorderGlow";
 
 const iconMap = {
   React: <SiReact />,
@@ -62,13 +62,13 @@ function ExperienceCard({
 }) {
   return (
     <BorderGlow
-      backgroundColor="#ffffff"
+      backgroundColor="var(--card)"
       glowColor="262 83 58"
-      glowRadius={20}
+      glowRadius={18}
       fillOpacity={0.12}
       colors={["#8b5cf6", "#3b82f6", "#14b8a6"]}
     >
-      <div className="p-4 md:p-5">
+      <div className="p-4 md:p-5 rounded rounded-4xl max-w-6xl">
         {/* Header */}
         <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
           <div className="space-y-1">
@@ -116,7 +116,7 @@ function ExperienceCard({
           {stack.map((tech) => (
             <span
               key={tech}
-              className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-700"
+              className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-700 "
             >
               {iconMap[tech]}
               {tech}
@@ -141,7 +141,7 @@ function ExperienceCard({
 export default function Experience() {
   return (
     <section id="experience" className="py-2">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
         <h3
           className="mb-8 text-center text-2xl font-bold text-gray-900 md:text-3xl"
           style={{ color: "var(--text)" }}

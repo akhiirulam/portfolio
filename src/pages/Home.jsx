@@ -1,3 +1,4 @@
+import Education from "../Sections/Education/Education";
 import Experience from "../Sections/Experience/Experience";
 import Hero from "../Sections/Hero/Hero";
 import Project from "../Sections/Projects/Project";
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <Experience />
       <Project />
+      <Education />
     </div>
   );
 }

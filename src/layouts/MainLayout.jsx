@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer/Footer";
 
 // import Footer from "../components/Footer";
 
@@ -11,8 +12,8 @@ function MainLayout() {
       <main className="w-full">
         <Outlet />
       </main>
-      {/* 
-      <Footer /> */}
+
+      <Footer />
     </div>
   );
 }
