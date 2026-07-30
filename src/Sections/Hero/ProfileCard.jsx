@@ -1,6 +1,6 @@
 function ProfileCard() {
   return (
-    <div className="relative w-[420px] rounded-3xl border border-white/10 bg-gray-200 p-8 shadow-2xl overflow-hidden my-10">
+    <div className="relative w-[420px] rounded-3xl border border-white/10 p-8 shadow-2xl overflow-hidden my-10">
       <div className="absolute left-1/2 top-1/2 h-52 w-52 rounded-full bg-blue-500/30 blur-3xl"></div>
 
       <div className="relative z-10">
@@ -18,7 +18,10 @@ function ProfileCard() {
               Email
             </p>
 
-            <p className="mt-2 text-xl font-bold text-black">
+            <p
+              className="mt-2 text-xl font-bold text-black"
+              style={{ color: "var(--text)" }}
+            >
               akhiirulam@gmail.com
             </p>
           </div>
@@ -28,7 +31,12 @@ function ProfileCard() {
               GitHub
             </p>
 
-            <p className="mt-2 text-xl font-bold text-black">@akhiirulam</p>
+            <p
+              className="mt-2 text-xl font-bold text-black"
+              style={{ color: "var(--text)" }}
+            >
+              @akhiirulam
+            </p>
           </div>
         </div>
       </div>

@@ -72,7 +72,10 @@ function ExperienceCard({
         {/* Header */}
         <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
           <div className="space-y-1">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+            <h3
+              className="text-2xl md:text-3xl font-bold text-gray-900"
+              style={{ color: "var(--text)" }}
+            >
               {role}
             </h3>
 
@@ -94,7 +97,12 @@ function ExperienceCard({
           </div>
 
           <div className="text-left lg:text-right">
-            <p className="font-semibold text-gray-900">{duration}</p>
+            <p
+              className="font-semibold text-gray-900"
+              style={{ color: "var(--text)" }}
+            >
+              {duration}
+            </p>
 
             <span className="mt-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600">
               {years}
@@ -132,9 +140,12 @@ function ExperienceCard({
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-white py-2">
+    <section id="experience" className="py-2">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <h3 className="mb-14 text-center text-2xl font-bold text-gray-900 md:text-3xl">
+        <h3
+          className="mb-8 text-center text-2xl font-bold text-gray-900 md:text-3xl"
+          style={{ color: "var(--text)" }}
+        >
           Experience
         </h3>
 

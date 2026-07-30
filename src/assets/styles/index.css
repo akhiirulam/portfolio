@@ -1,1 +1,40 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text-secondary: #6b7280;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #f8fafc;
+  --card: #1e293b;
+  --border: #334155;
+  --text-secondary: #cbd5e1;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.bg-theme {
+  background: var(--bg);
+}
+
+.text-theme {
+  color: var(--text);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.card-theme {
+  background: var(--card);
+  border: 1px solid var(--border);
+}

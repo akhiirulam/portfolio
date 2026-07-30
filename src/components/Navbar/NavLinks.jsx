@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "../Theme/ThemeToggle";
 
 function NavLinks() {
   return (
@@ -42,6 +43,9 @@ function NavLinks() {
           >
             Contact
           </NavLink>
+        </li>
+        <li>
+          <ThemeToggle />
         </li>
       </ul>
     </div>
