@@ -1,4 +1,4 @@
-import ProfileCard from "../../components/Cards/ProfileCard";
+import ProfileCard from "./ProfileCard";
 
 const Hero = () => {
   return (
