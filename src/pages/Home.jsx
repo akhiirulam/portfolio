@@ -3,6 +3,7 @@ import Experience from "../Sections/Experience/Experience";
 import Hero from "../Sections/Hero/Hero";
 import Project from "../Sections/Projects/Project";
 import Skills from "../Sections/Skills/Skills";
+import Testimonials from "../Sections/Testimonials/Testimonials";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Project />
       <Education />
       <Skills />
+      <Testimonials />
     </div>
   );
 }

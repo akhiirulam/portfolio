@@ -3,7 +3,7 @@ import projectdata from "./ProjectData";
 
 export default function Projects() {
   return (
-    <section id="projects" className="pt-24 pb-2">
+    <section id="projects" className="py-8">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-14 text-center">
           <h2

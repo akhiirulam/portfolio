@@ -36,7 +36,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="py-16"
+      className="py-8"
       style={{
         background: "var(--bg)",
         color: "var(--text)",

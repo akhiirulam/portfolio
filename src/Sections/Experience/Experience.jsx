@@ -68,7 +68,7 @@ function ExperienceCard({
       fillOpacity={0.12}
       colors={["#8b5cf6", "#3b82f6", "#14b8a6"]}
     >
-      <div className="p-4 md:p-5 rounded rounded-4xl max-w-6xl">
+      <div className="p-4 md:p-5 rounded rounded-4xl max-w-6xl py-8">
         {/* Header */}
         <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
           <div className="space-y-1">

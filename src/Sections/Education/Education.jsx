@@ -4,7 +4,7 @@ function Education() {
   return (
     <section
       id="education"
-      className="flex min-h-screen items-center justify-center py-12"
+      className="flex min-h-screen items-center justify-center py-8"
       style={{
         background: "var(--bg)",
         color: "var(--text)",

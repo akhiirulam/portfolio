@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center p-5 bg-white transition-colors duration-300"
+      className="min-h-screen flex items-center p-5 bg-white transition-colors duration-300 py-8"
       style={{
         background: "var(--bg)",
         color: "var(--text)",
@@ -43,9 +43,11 @@ const Hero = () => {
             </a>
 
             <a
-              href="/resume.pdf"
-              download
-              className="rounded-lg border border-blue-600 px-6 py-3 text-center text-blue-600 transition hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-500"
+              href={import.meta.env.VITE_RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Akhil_Chandran_jevdan.pdf"
+              className="rounded-lg border border-blue-600 px-6 py-3 text-center text-blue-600 transition hover:bg-blue-600 hover:text-white"
             >
               Download Resume
             </a>
