@@ -13,22 +13,16 @@ function Navbar() {
         color: "var(--text)",
       }}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
-        <h1 className="text-2xl font-bold">Akhil.</h1>
-
-        {/* Desktop Menu */}
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-center px-6">
         <div className="hidden md:block">
           <NavLinks />
         </div>
 
-        {/* Mobile Button */}
         <button onClick={() => setOpen(!open)} className="text-3xl md:hidden">
           {open ? <HiX /> : <HiOutlineMenuAlt3 />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div
           className="border-t md:hidden"
