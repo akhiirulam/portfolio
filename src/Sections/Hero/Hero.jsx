@@ -11,7 +11,7 @@ const Hero = () => {
       }}
     >
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 lg:flex-row lg:justify-between">
-        {/* Left */}
+        {/* Left SIde */}
         <div className="flex-1 text-center lg:text-left">
           <p className="text-base font-semibold text-blue-600 dark:text-blue-400 md:text-lg">
             Hello, I'm
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right */}
+        {/* Right side*/}
         <div className="flex flex-1 justify-center">
           <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg">
             <ProfileCard />

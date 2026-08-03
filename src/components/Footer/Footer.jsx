@@ -84,7 +84,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/YOUR-LINKEDIN"
+                href="https://linkedin.com/in/lifeofakhilan"
                 target="_blank"
                 rel="noreferrer"
                 className="transition hover:scale-110 hover:text-blue-500"
